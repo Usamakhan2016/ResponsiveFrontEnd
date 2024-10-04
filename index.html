@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <a class="logo">
+                LOGO    
+            </a>
+            <nav class="nav">
+                  <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Freelancer</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href=""><i class="fa fa-search"></i></a></li>
+                  </ul>  
+            </nav>
+        </header>
+        <div class="contents">
+            <div class="profession">
+                <span>
+                    D
+                </span>
+                 developer
+            </div>
+                <div class="name">
+                     <span>Software <br>Engineer</span>   
+                </div>
+                <a href="#" class="link1">WHO AM I</a>
+                <a href="#" class="contact_me_link">CONTACT ME</a>
+                <a href="#" class="portfolio_link">VIEW PORTFOLIO</a>    
+        </div>
+
+        <div class="whoAmi">
+            <div class="contents">
+                <div class="name">
+                    <span>Usama <br> Sakhawat</span>
+                    <div class="text-content">
+                        <h2>
+                            Usama Sakhawat is a passoniate Software engineer specializing in Microsoft dynamics 365 F&O, Graphic design and Web Development.
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque necessitatibus harum, optio quia ipsa consequatur culpa. Perferendis aut voluptates nam? Nostrum eligendi magni eveniet doloribus excepturi quam ab dicta atque!</p>
+                    </div>
+                    <a href="" class="back-to-main">BACK TO MAIN</a>
+                    <a href="" class="contact_me_link">CONTACT ME</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $(".link1").click(function()
+        {
+            $(".whoAmi").addClass("active")
+        })
+        })
+    </script>
+</body>
+</html>
