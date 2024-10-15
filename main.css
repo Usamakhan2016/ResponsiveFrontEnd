@@ -130,7 +130,7 @@ background-image: linear-gradient(315deg,#FC9842  0%,#FE5f75 74%);
     font-family: tahoma; 
 }
 
-.link1, .contact_me_link{
+.link1, .contact_me_link,.back-to-main{
     display: block;
     width: 150px;
     text-align: center;
@@ -169,7 +169,7 @@ transform: translate(-50%,-50%) rotate(-90deg);
     padding-left: 18px;
 }
 
-.link1:before,.contact_me_link:before{
+.link1:before,.contact_me_link:before,.back-to-main:before{
     background: #ee4266;
     content: "";
     position: absolute;
@@ -185,7 +185,7 @@ transform: translate(-50%,-50%) rotate(-90deg);
     background: yellow;
 }
 
-.link1:after,.contact_me_link:after{
+.link1:after,.contact_me_link:after.back-to-main:after{
 content: "";
 position: absolute;
 transition: all 0.3s ease;
@@ -203,7 +203,8 @@ margin-left: -1px;
 }
 
 .link1:hover:after,
-.contact_me_link:hover:after{
+.contact_me_link:hover:after,
+.back-to-main:hover:after{
     height: 0;
 }
 
@@ -287,12 +288,78 @@ margin-left: -1px;
 .whoAmi .text-content h2{
     font-weight: 400;
     padding:  20px 0;
-    font-size: 20px;
+    /* font-size: 16px; */
 }
 
 
 .whoAmi .text-content p{
+    line-height: 1.8;
+    /* font-weight: 400; */
+    /* padding:  20px 0; */
+    /* font-size: 16px; */
+}
+
+.contactMe{
+    background-color: #ee4266;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 101;
+    transition: all 0.5s ease;
+    transform: translate(150%,0%);
+}
+
+.contactMe.active{
+    transform: translate(0%,0%);
+}
+
+.contactMe::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20%;
+    width: 70%;
+    height: 100vh;
+    background-color: #540d6e;
+    overflow: hidden;
+    transform-origin: 0 0;
+    z-index: 1;
+    background-image: url(images/Contact-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contactMe .form{
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 140px 100px;
+}
+
+.contactMe .top{
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.contactMe h2{
+    font-size: 22px;
     font-weight: 400;
-    padding:  20px 0;
-    font-size: 20px;
+    padding: 20px 0;
+    width: 50%;
+}
+
+.contactMe .contact-info{
+    text-align: right;
+    width: 50%;
+}
+.contactMe .contact-info .phone{
+    font-size: 33px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.contactMe .contact-info p{
+    padding-bottom: 10px;
 }
