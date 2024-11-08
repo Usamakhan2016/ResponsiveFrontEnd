@@ -124,8 +124,8 @@ background-image: linear-gradient(315deg,#FC9842  0%,#FE5f75 74%);
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 35%;
-    right: 1%;
+    top: 40%;
+    right: 8%;
     text-transform: uppercase;
     font-family: tahoma; 
 }
@@ -361,5 +361,78 @@ margin-left: -1px;
 }
 
 .contactMe .contact-info p{
-    padding-bottom: 10px;
+    padding-bottom: 10px;   
+}
+
+.contactMe .contact-info p i{
+    font-size: 18px;
+    color: #fff;
+    margin-right: 8px;
+}
+
+.contactMe .form input[type="text"]{
+    font-family: 'Poppins',sans-serif;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    display: block;
+    font-size: 14px;
+    background: rgba(255, 255, 255,0.20);
+    color: white;
+    margin-bottom: 35px;
+}
+
+.contactMe .form .w50{
+    width: 49% !important;
+}
+
+.contactMe .form .fl{
+    float: left;
+}
+
+.contactMe .form .fr{
+    float: right;
+}
+
+.contactMe .form .clear{
+    clear: both;
+}
+
+.contactMe .form input[type="text"]::placeholder,
+.contactMe .form textarea::placeholder{
+     color: white;
+     font-weight: 400;
+}
+
+.contactMe .form textarea{
+    font-family: "Poppins",sans-serif;
+    width: 100%;
+height: 120px;
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    display: block;
+    font-size: 14px;
+    background: rgba(255, 255, 255,0.20);
+    color: white;
+    margin-bottom: 35px;
+}
+
+.contactMe .form input[type="submit"]{
+    background-color: #f9b03e;
+    font-size: 14px;
+    padding: 15px 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Poppins",sans-serif;
+    color: white;
+    font-weight: 400;
+}
+.contactMe .back-to-main{
+    color: #f8b334;
+    left: 100% !important;
+    margin-left: -65px !important;
+    transform: translate(-50%,-50%) rotate(-90deg) !important;
 }
